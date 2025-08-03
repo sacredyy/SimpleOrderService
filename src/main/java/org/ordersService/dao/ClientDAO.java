@@ -6,7 +6,7 @@ import org.ordersService.entity.Client;
 import java.util.List;
 import java.util.Optional;
 
-public class ClientDAO extends JPA{
+public class ClientDAO extends AbstractJpaDao {
 
     public ClientDAO() {
     }

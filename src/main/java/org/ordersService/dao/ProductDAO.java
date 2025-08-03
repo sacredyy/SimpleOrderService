@@ -5,7 +5,7 @@ import org.ordersService.entity.Product;
 
 import java.util.*;
 
-public class ProductDAO extends JPA{
+public class ProductDAO extends AbstractJpaDao {
 
     public boolean save(Product product) {
         EntityTransaction tx = em.getTransaction();

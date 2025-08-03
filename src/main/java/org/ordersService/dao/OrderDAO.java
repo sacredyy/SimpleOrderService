@@ -5,7 +5,7 @@ import org.ordersService.entity.Order;
 
 import java.util.*;
 
-public class OrderDAO extends JPA{
+public class OrderDAO extends AbstractJpaDao {
     public Order saveOrder(Order order) {
         EntityTransaction tx = em.getTransaction();
 

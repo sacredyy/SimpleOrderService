@@ -2,13 +2,11 @@ package org.ordersService.dao;
 
 import jakarta.persistence.*;
 
-import java.util.concurrent.Callable;
-
-abstract class JPA {
+abstract class AbstractJpaDao {
     protected final EntityManagerFactory emf;
     protected final EntityManager em;
 
-    public JPA() {
+    public AbstractJpaDao() {
         this.emf = Persistence.createEntityManagerFactory("ordersDB");
         this.em = emf.createEntityManager();
     }
